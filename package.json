@@ -1,5 +1,18 @@
 {
+  "name": "tweet-screenshot",
+  "version": "1.0.0",
+  "description": "CLI tool to screenshot tweets from X/Twitter",
+  "bin": {
+    "tweet-screenshot": "./tweet-screenshot.js"
+  },
+  "scripts": {
+    "start": "node tweet-screenshot.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "license": "MIT",
   "dependencies": {
-    "puppeteer": "^20.7.2"
+    "puppeteer": "^24"
   }
 }
