@@ -104,6 +104,12 @@ async function dismissModals(page) {
   } catch {
     // No overlay
   }
+
+  // Hide the "Don't miss what's happening" login bar
+  await page.evaluate(() => {
+    const bar = document.querySelector('[data-testid="BottomBar"]');
+    if (bar) bar.style.display = 'none';
+  });
 }
 
 async function main() {
